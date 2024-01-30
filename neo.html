@@ -2,26 +2,130 @@
  <html lang="en"> 
     <head> <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Card</title> 
+        <title>Fragrance</title> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
          <link rel="icon" href="images/software.png" type="image/x-icon">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
           crossorigin="anonymous" /> 
           <style> 
-          .card{ margin: auto; } 
+         
+          
+          .card{
+            margin: auto; 
+            margin-top: 30px;
+            
+        } 
+        
+          h5{
+            text-align: center;
+            font-family: sans-serif;
+            padding-top: 30px;
+        }
+        li{
+          font-size: larger;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 30px;
+            color: #333;
+        } 
+
           </style> 
           </head> 
           <body> 
-            <div class="card" style="width: 18rem;"> 
-        <img class="card-img-top" 
-        src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-         alt="Card image cap">
-         <div class="card-body"> 
-            <p class="card-text">A fresh, floral explosion of femininity. </p> 
-    
-            <a href="#" class="btn btn-primary">View</a>
 
- </div> 
-</div> 
+            
+            
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Scents</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <div id="liveAlertPlaceholder"></div>
+             
+              <h5>A fresh, floral explosion of femininity that captivates the senses and celebrates the essence of womanhood. Immerse yourself in the delicate dance of 
+                petals and the invigorating burst of freshness that unfolds with each spritz.
+              </h5><br>
+        
+<div class="card-group">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/1961794/pexels-photo-1961794.jpeg?auto=compress&cs=tinysrgb&w=400" class="card" alt="...">
+      <div class="card-body">>
+        <h5 class="card-title"> My sin</h5>
+        <p class="card-text"> A timeless and iconic fragrance, reflecting the elegance and glamour of the Roaring Twenties.his perfume is a delightful bouquet of blooming flowers. The top notes burst with the freshness of jasmine and rose,
+             while the heart notes reveal a soft embrace of lily of the valley.</p>
+             <h6>P550.95</h6>
+
+             <a href="#" class="btn btn-primary">Shop Now</a>
+          
+              <p class="card-text"><small class="text-body-secondary"></small></p>
+            </div>
+    </div>
+    <div class="card">.
+      <img src="https://images.pexels.com/photos/965993/pexels-photo-965993.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Gilded Aura</h5>
+        <p class="card-text">A walk through a serene forest encapsulated in a bottle. The top notes evoke the essence of cedarwood and pine, creating a grounding and woody foundation. As the fragrance evolves, hints of vetiver and sandalwood emerge, 
+            leaving a trail of sophistication</p>
+            <h6>P699.99</h6>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+        <p class="card-text"><small class="text-body-secondary"></small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/19086282/pexels-photo-19086282/free-photo-of-a-hand-holding-a-bottle-of-perfume.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Dojo</h5>
+        <p class="card-text">Imagine a burst of sunshine captured in a bottle. The top notes are a zesty blend of lemon and bergamot, creating a refreshing and invigorating experience. As the fragrance develops, 
+            hints of orange blossom and green tea add a crisp, clean finish</p>
+            <h6>P500.00</h6>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+        <p class="card-text"><small class="text-body-secondary"></small></p>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div class="card" style="width: 18rem;"> 
+  <img class="card-img-top" 
+  src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+   alt="Card image cap">
+   <div class="card-body"> 
+      <p class="card-text">A fresh, floral explosion of femininity. </p> 
+
+      <a href="#" class="btn btn-primary">View</a>
+   </div>
+   </div>
+
+   <div class="social-icons">
+    <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <!-- Add more social media icons as needed -->
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+    crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+     crossorigin="anonymous">
+
 </body>
  </html>
