@@ -2,10 +2,10 @@
 <html>
 
 <head>
-  <title>ODC | Intermediate | 001</title>
+  <title>Orange Digital Center | Intermediate </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="icon" href="images/software.png" type="image/x-icon">
+  <link rel="icon" href="assets/images/icons/software.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     crossorigin="anonymous" />
 
@@ -49,6 +49,15 @@
       /* Example background color */
      
     }
+    .custom-button-tlotlo {
+      border: 1px solid #fff;
+      /* Example border styles */
+      border-radius: 30px;
+      background-color: goldenrod;
+     
+      /* Example background color */
+     
+    }
   </style>
 </head>
 
@@ -59,7 +68,7 @@
     <!-- Navbar brand with logo -->
     <a class="navbar-brand" href="#">
       <div class="d-flex align-items-start">
-        <img src="images/orange_master_logo.svg" alt="Logo" style="margin-right: 10px;">
+        <img src="assets/images/icons/orange_master_logo.svg" alt="Logo" style="margin-right: 10px;">
         <h5 class="text-white">
           Orange<br>
           Digital Center
@@ -95,11 +104,12 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-users"></i> Class Tutorials
+            <i class="fas fa-users"></i> Class Members
           </a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
             <!-- Add Name, Surname and Link to Page-->
             <a class="dropdown-item" href="pages/theo_motsisi.html" target="_blank">Theo Motsisi</a>
+            <a class="dropdown-item" href="pages/tlotlo_pikashe.html" target="_blank">Tlotlo Pikashe</a>
            
           </div>
         </li>
@@ -182,32 +192,32 @@
           <div class="mask rgba-black-light"></div>
         </div>
         <div class="carousel-caption">
-          <h3 class="h3-responsive">Launching Pad</h3>
+          <h3 class="h3-responsive">Launching Pad One</h3>
           <p>Space X | Jan 2024</p>
         </div>
       </div>
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-            <img class="d-block w-100" src="assets/images/banner_img/img_1.jpg"
+            <img class="d-block w-100" src="assets/images/banner_img/img_2.jpg"
             alt="Second slide">
           <div class="mask rgba-black-strong"></div>
         </div>
         <div class="carousel-caption">
-            <h3 class="h3-responsive">Launching Pad</h3>
-            <p>Space X | Jan 2024</p>
+            <h3 class="h3-responsive">Launching Pad Two</h3>
+            <p>Space X | DEC 2023</p>
         </div>
       </div>
       <div class="carousel-item">
         <!--Mask color-->
         <div class="view">
-            <img class="d-block w-100" src="assets/images/banner_img/img_1.jpg"
+            <img class="d-block w-100" src="assets/images/banner_img/img_3.jpg"
             alt="Third slide">
           <div class="mask rgba-black-slight"></div>
         </div>
         <div class="carousel-caption">
-            <h3 class="h3-responsive">Launching Pad</h3>
-            <p>Space X | Jan 2024</p>
+            <h3 class="h3-responsive">Launching Three</h3>
+            <p>Space X | Nov 2023</p>
         </div>
       </div>
     </div>
@@ -282,7 +292,7 @@
             <div class="card mb-4">
               <!-- Card image -->
               <div class="view overlay">
-                <img class="card-img-top" src="assets/images/card_img/terminator.jpg" alt="Card image cap">
+                <img class="card-img-top" src="assets/images/card_img/black_yoga.jpg" alt="Card image cap">
                 <a href="#!">
                   <div class="mask rgba-white-slight"></div>
                 </a>
@@ -296,7 +306,7 @@
                 <!-- Button -->
                 <div style="text-align: center;">
                   <div style="text-align: center;">
-                    <button  type="button"  style="color: #fff; width: 150px;" class="btn btn-light-blue btn-md custom-button">
+                    <button  type="button" onclick="navigateToPiakshePage()" style="color: #fff; width: 150px;" class="btn btn-light-blue btn-md custom-button-tlotlo">
                       <i class="fas fa-info-circle"></i> Read more
                     </button>
                   </div>
@@ -306,7 +316,72 @@
               </div>
             </div>
             <!-- Card -->
+        </div>
+
+        <!-- Unity Ndimande -->
+        <div class="col-md-4">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="assets/images/card_img/default_image.png" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Unity Ndimande</h4>
+              <!-- Text -->
+              <p class="lead">Web developer<br></p>
+              <!-- Button -->
+              <div style="text-align: center;">
+                <div style="text-align: center;">
+                  <button  type="button" onclick="navigateToNdimandePage()" style="color: #fff; width: 150px;" class="btn btn-light-blue btn-md custom-button-tlotlo">
+                    <i class="fas fa-info-circle"></i> Read more
+                  </button>
+                </div>
+  
+              </div>
+  
+            </div>
           </div>
+          <!-- Card -->
+         </div>
+
+         <!-- Wakgosi Modise -->
+         <div class="col-md-4">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="assets/images/card_img/web.png" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Wakgosi Modise</h4>
+              <!-- Text -->
+              <p class="lead">ODC Web Development Student<br></p>
+              <!-- Button -->
+              <div style="text-align: center;">
+                <div style="text-align: center;">
+                  <button  type="button" onclick="navigateToModisePage()" style="color: #fff; width: 150px;" class="btn btn-light-blue btn-md custom-button-tlotlo">
+                    <i class="fas fa-info-circle"></i> Read more
+                  </button>
+                </div>
+  
+              </div>
+  
+            </div>
+          </div>
+          <!-- Card -->
+         </div>
+
       </div>
      
     </div>
@@ -423,6 +498,22 @@
     // Perform your navigation logic here
     // For example, redirect to another page
     window.location.href = "pages/theo_motsisi.html";
+  }
+  function navigateToPiakshePage() {
+    // Perform your navigation logic here
+    // For example, redirect to another page
+    window.location.href = "pages/tlotlo_pikashe.html";
+  }
+  function navigateToNdimandePage() {
+    // Perform your navigation logic here
+    // For example, redirect to another page
+    window.location.href = "pages/unity_ndimande.html";
+  }
+
+  function navigateToModisePage() {
+    // Perform your navigation logic here
+    // For example, redirect to another page
+    window.location.href = "pages/wakgosi_modise.html";
   }
 </script>
 
