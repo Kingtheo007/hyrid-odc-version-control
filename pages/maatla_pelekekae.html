@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maatla The Bodybuilder</title>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(to right, #FF5E62, #FF9966);
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+        }
+
+        header {
+            background-color: transparent;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.5s ease;
+        }
+
+        header.scrolled {
+            background-color: #333;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .logo iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .navbar {}
+
+        .navbar a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00;
+        }
+
+        .dropdown {
+            margin: 0 15px;
+        }
+
+        .dropdown-toggle {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .dropdown-menu {
+            background-color: #333;
+            border: none;
+        }
+
+        .dropdown-item {
+            color: #fff;
+        }
+
+        .dropdown-item:hover {
+            color: #ffcc00;
+        }
+
+        .search-navbar {
+            margin-left: auto;
+            /* Push to the right */
+        }
+
+        .search-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            margin-right: 10px;
+        }
+
+        .blog-content {
+            padding: 80px 50px;
+            border-radius: 10px;
+            margin-top: 120px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 1.4em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .featured-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .featured-item {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-item:hover {
+            transform: scale(1.05);
+        }
+
+        .featured-item h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+
+        .featured-item p {
+            font-size: 1.2em;
+            color: #ddd;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 50px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #ffcc00;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 92.5%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <iframe src="https://giphy.com/embed/3HFcLK4IXKoviqvwve" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <nav class="navbar">
+            <a href="#" class="btn btn-dark">Home</a>
+            <div class="dropdown">
+                <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="programsDropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Programs
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+                    <li><a class="dropdown-item" href="#">Calisthenics</a></li>
+                    <li><a class="dropdown-item" href="#">Weight lifting</a></li>
+                    <li><a class="dropdown-item" href="#">Crossfit</a></li>
+                </ul>
+            </div>
+            <a href="#" class="btn btn-dark">Contact Us</a>
+            <div class="search-navbar">
+                <form class="search-form">
+                    <input type="text" class="form-control search-input" placeholder="Search...">
+                    <button type="submit" class="btn btn-light">Search</button>
+                </form>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="blog-content">
+        <h1>Maatla The Bodybuilder</h1>
+        <p>
+            Yo, I'm Maatla, a 25-year-old male with 8 years of bodybuilding experience. My journey started with playing
+            rugby,
+            which became the foundation and reason for my dedication to bodybuilding.
+        </p>
+        <p>
+            Explore my blog for fitness tips, workout routines, and nutrition advice. Join me on this incredible journey
+            towards
+            a healthier and stronger lifestyle!
+        </p>
+
+
+
+        <div class="featured-content">
+
+
+
+            <div id="carouselWorkout" class="carousel slide col-md-4 featured-item" data-bs-ride="carousel">
+                <h3 class="text-center mb-3">Workout Routines</h3>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_1280.jpg"
+                            class="d-block w-100" alt="Workout Routines">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div id="carouselNutrition" class="carousel slide col-md-4 featured-item" data-bs-ride="carousel">
+                <h3 class="text-center mb-3">Nutritional Tips</h3>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn.pixabay.com/photo/2015/05/30/01/18/vegetables-790022_1280.jpg"
+                            class="d-block w-100" alt="Nutrition Tips">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div id="carouselChallenges" class="carousel slide col-md-4 featured-item" data-bs-ride="carousel">
+                <h3 class="text-center mb-3">Fitness Challenges</h3>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn.pixabay.com/photo/2020/03/30/01/12/spartan-4982723_1280.jpg"
+                            class="d-block w-100" alt="Fitness Challenges">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="subscribeForm">
+            <h4>Subscribe to our Mailing List</h4>
+            <form id="mailingListForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" style="width: 200px;" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" style="width: 200px;" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+
+
+        <footer id="mainFooter" style="display: none;">
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+
+            function toggleFooterVisibility() {
+                const footer = document.getElementById('mainFooter');
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition > 100) {
+                    footer.style.display = 'block';
+                } else {
+                    footer.style.display = 'none';
+                }
+            }
+
+
+            window.addEventListener('scroll', function () {
+                const header = document.querySelector('header');
+                header.classList.toggle('scrolled', window.scrollY > 0);
+
+
+                toggleFooterVisibility();
+            });
+
+
+            toggleFooterVisibility();
+        </script>
+</body>
+
+</html>
