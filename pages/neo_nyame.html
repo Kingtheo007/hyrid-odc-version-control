@@ -2,7 +2,7 @@
  <html lang="en"> 
     <head> <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Fragrance</title> 
+        <title>Fragrance Store</title> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
          <link rel="icon" href="images/software.png" type="image/x-icon">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
@@ -24,6 +24,8 @@
         }
         h6{
           text-align: center;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          
         }
        
         li{
@@ -35,15 +37,47 @@
         }
 
         .social-icons a {
-            margin: 0 10px;
+            margin: 0 20px;
             font-size: 30px;
             color: #333;
         } 
+        
+
+        .nav {
+          margin-top: 20px;
+          border-radius: 20px;
+            background-color: #f8afd4; /* Change the background color of the nav bar */
+        }
+
+        .nav a {
+            color: white !important; /* Change the color of the nav links */
+        }
+
+      
+        .card-body {
+            background-color:rgb(250, 205, 212);
+            padding: 20px;
+        }
+
+        
+.rating input {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+  font-size: 24px;
+  color: #f8a6a6;
+}
+
+.rating input:checked ~ label {
+  color: black;
+}
 
           </style> 
           </head> 
           <body> 
-
+            
             
             
             <ul class="nav justify-content-center">
@@ -71,6 +105,22 @@
         <h5 class="card-title"> Majestic Essence</h5>
         <p class="card-text"> A timeless and iconic fragrance, reflecting the elegance and glamour of the Roaring Twenties.his perfume is a delightful bouquet of blooming flowers. The top notes burst with the freshness of jasmine and rose,
              while the heart notes reveal a soft embrace of lily of the valley.</p>
+             
+             <div class="rating">
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+            </div>
+            
+             
+             
              <h6>P550.95</h6>
 
             
@@ -84,6 +134,22 @@
         <h5 class="card-title">Gilded Aura</h5>
         <p class="card-text">A walk through a serene forest encapsulated in a bottle. The top notes evoke the essence of cedarwood and pine, creating a grounding and woody foundation. As the fragrance evolves, hints of vetiver and sandalwood emerge, 
             leaving a trail of sophistication</p>
+
+            <div class="rating">
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+            </div>
+            
+
+
             <h6>P699.99</h6>
             <button type="button" class="btn btn-outline-info">Shop Now</button>
         <p class="card-text"><small class="text-body-secondary"></small></p>
@@ -95,6 +161,22 @@
         <h5 class="card-title">Luxury Luminaire</h5>
         <p class="card-text">Imagine a burst of sunshine captured in a bottle. The top notes are a zesty blend of lemon and bergamot, creating a refreshing and invigorating experience. As the fragrance develops, 
             hints of orange blossom and green tea add a crisp, clean finish</p>
+           
+           
+            <div class="rating">
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+            </div>
+            
+           
             <h6>P599.00</h6>
             <button type="button" class="btn btn-outline-info">Shop Now</button>
         <p class="card-text"><small class="text-body-secondary"></small></p>
@@ -112,9 +194,7 @@
     
 </div>
 
-
-
-
+ 
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
     integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
