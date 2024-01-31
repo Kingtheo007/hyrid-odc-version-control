@@ -58,6 +58,15 @@
       /* Example background color */
      
     }
+    .custom-button-leano {
+      border: 1px solid #fff;
+      /* Example border styles */
+      border-radius: 30px;
+      background-color: #0e467a;
+     
+      /* Example background color */
+     
+    }
   </style>
 </head>
 
@@ -110,7 +119,7 @@
             <!-- Add Name, Surname and Link to Page-->
             <a class="dropdown-item" href="pages/theo_motsisi.html" target="_blank">Theo Motsisi</a>
             <a class="dropdown-item" href="pages/tlotlo_pikashe.html" target="_blank">Tlotlo Pikashe</a>
-           
+            <a class="dropdown-item" href="pages/leano_kgafela.html" target="_blank">Leano Kgafela</a>
           </div>
         </li>
 
@@ -382,7 +391,7 @@
           <!-- Card -->
          </div>
         <!--Leano Kgafela-->
-        <div class="col-md-4">
+         <div class="col-md-4">
           <!-- Card -->
           <div class="card mb-4">
             <!-- Card image -->
@@ -401,8 +410,8 @@
               <!-- Button -->
               <div style="text-align: center;">
                 <div style="text-align: center;">
-                  <button  type="button" onclick="navigateTo()" style="color: #fff; width: 150px;" class="btn btn-light-blue btn-md custom-button-tlotlo">
-                    <i ></i> Shop Now
+                  <button  type="button" onclick="navigateToLeanoPage()" style="color: #fff; width: 150px;" class="btn btn-light-blue btn-md custom-button-leano">
+                    </i> Shop Now!
                   </button>
                 </div>
   
@@ -547,6 +556,11 @@
     // Perform your navigation logic here
     // For example, redirect to another page
     window.location.href = "pages/wakgosi_modise.html";
+  }
+  function navigateToLeanoPage() {
+    // Perform your navigation logic here
+    // For example, redirect to another page
+    window.location.href = "pages/leano_kgafela.html";
   }
 </script>
 
