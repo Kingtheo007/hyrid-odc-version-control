@@ -61,6 +61,15 @@
 
 
     }
+    .custom-button-leano {
+      border: 1px solid #fff;
+      /* Example border styles */
+      border-radius: 30px;
+      background-color: #0e467a;
+     
+      /* Example background color */
+     
+    }
   </style>
 </head>
 
@@ -387,7 +396,38 @@
           </div>
           <!-- Card -->
         </div>
-
+        
+          <!--Leano Kgafela-->
+        <div class="col-md-4">
+          <!-- Card -->
+          <div class="card mb-4">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="https://rb.gy/1298jp" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">Leano Kgafela </h4>
+              <!-- Text -->
+              <p class="lead">Luxury watches on sale<br></p>
+              <!-- Button -->
+              <div style="text-align: center;">
+                <div style="text-align: center;">
+                  <button  type="button" onclick="navigateToLeanoPage()" style="color: #fff; width: 150px;" class="btn btn-light-blue btn-md custom-button-leano">
+                    </i> Shop Now!
+                  </button>
+                </div>
+  
+              </div>
+  
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
       </div>
 
     </div>
@@ -555,6 +595,11 @@
     // Perform your navigation logic here
     // For example, redirect to another page
     window.location.href = "pages/maatla_pelekekae.html";
+  }
+  function navigateToLeanoPage() {
+    // Perform your navigation logic here
+    // For example, redirect to another page
+    window.location.href = "pages/leano_kgafela.html";
   }
 </script>
 
