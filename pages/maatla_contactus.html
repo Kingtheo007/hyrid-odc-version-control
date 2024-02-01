@@ -4,39 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maatla The Bodybuilder</title>
+    <title>Contact Us - Maatla The Bodybuilder</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-        
-        header {
-            background-color: transparent;
-            padding: 20px 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: background-color 0.5s ease;
-            
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        
-        body {
-            background: linear-gradient(to right, #33004d, #ff0066);
-            color: #fff;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 16px;
-        }
-
-        
-        .logo {
+       
+       .logo {
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -266,6 +242,80 @@
         .social-icons a:hover {
             color: #ffcc00;
         }
+
+       header {
+            background-color: transparent;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.5s ease;
+            
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            font-size: 2.5em;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .contact-form .form-label {
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .contact-form .form-control {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .contact-form .form-control:focus {
+            background-color: #fff;
+            color: #333;
+            border-color: #ffcc00;
+            outline: none;
+        }
+
+        .contact-form .btn-primary {
+            background-color: #ffcc00;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form .btn-primary:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        body {
+            background: linear-gradient(to right, #33004d, #ff0066);
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+        }
+
     </style>
 </head>
 
@@ -283,9 +333,9 @@
                     Programs
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="programsDropdown">
-                    <li><a class="dropdown-item" href="maatla_callisthenics.html">Calisthenics</a></li>
-                    <li><a class="dropdown-item" href="maatla_weightlifting.html">Weight-lifting</a></li>
-                    <li><a class="dropdown-item" href="maatla_crossfit.html">Crossfit</a></li>
+                    <li><a class="dropdown-item" href="#">Calisthenics</a></li>
+                    <li><a class="dropdown-item" href="#">Weight-lifting</a></li>
+                    <li><a class="dropdown-item" href="#">Crossfit</a></li>
                 </ul>
             </div>
             <a href="maatla_contactus.html" class="btn btn-dark">Contact Us</a>
@@ -299,62 +349,36 @@
     </header>
 
     <div class="blog-content">
-        <h1>Maatla The Bodybuilder</h1>
-        <p>
-            Yo, I'm Maatla, a 25-year-old male with 8 years of bodybuilding experience. My journey started with playing
-            rugby,
-            which became the foundation and reason for my dedication to bodybuilding.
-        </p>
-        <p>
-            Explore my blog for fitness tips, workout routines, and nutrition advice. Join me on this incredible journey
-            towards
-            a healthier and stronger lifestyle!
-        </p>
+        
 
-        <div class="featured-content">
-            <div id="carouselWorkout" class="carousel slide col-md-4 featured-item" data-bs-ride="carousel">
-                <h3 class="text-center mb-3">Workout Routines</h3>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_1280.jpg"
-                            class="d-block w-100" alt="Workout Routines">
-                    </div>
-                </div>
-            </div>
-            <div id="carouselNutrition" class="carousel slide col-md-4 featured-item" data-bs-ride="carousel">
-                <h3 class="text-center mb-3">Nutritional Tips</h3>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://cdn.pixabay.com/photo/2015/05/30/01/18/vegetables-790022_1280.jpg"
-                            class="d-block w-100" alt="Nutrition Tips">
-                    </div>
-                </div>
-            </div>
-            <div id="carouselChallenges" class="carousel slide col-md-4 featured-item" data-bs-ride="carousel">
-                <h3 class="text-center mb-3">Fitness Challenges</h3>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://cdn.pixabay.com/photo/2020/03/30/01/12/spartan-4982723_1280.jpg"
-                            class="d-block w-100" alt="Fitness Challenges">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="subscribeForm">
-            <h4>Subscribe to our Mailing List</h4>
-            <form id="mailingListForm">
+        
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
                 <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="email" name="email" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
+       
     </div>
 
     <footer id="mainFooter" style="display: none;">
