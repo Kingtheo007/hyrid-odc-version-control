@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Cuber's Car dealership</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <h2 style="text-align: center; font-style: oblique; color: white;">Cuber's Car-Dealership</h2>
+
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container-fluid">
+            <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Pre-owned</a>
+                    <a class="nav-link" href="#">Online consultant</a>
+                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="#">About Us</a>
+
+                </div>
+            </div>
+            <!--Search bar-->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search any car model" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+            
+        </div>
+    </nav>
+
+    <div id="carouselExampleTouch" class="carousel slide" data-mdb-touch="false">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleTouch"
+            data-mdb-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleTouch"
+            data-mdb-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-mdb-target="#carouselExampleTouch"
+            data-mdb-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="background.jpg"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: red;">You want a sport car? We got you! </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="classics.jpg"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: red;">You love classics? There you go.</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="jeep.jpg"/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white;">Are you into big cars? No problem.</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
+</body>
+
+<!--They make the next and prev buttons for the slides to work-->
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- MDB JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+
+
+</html>
