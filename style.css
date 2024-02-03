@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% of the viewport height */
+}
+
+main {
+  flex: 1; /* Take remaining space */
+}
+
+footer {
+  flex-shrink: 0; /* Do not shrink the footer */
+}
