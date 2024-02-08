@@ -1,10 +1,83 @@
-<!DOCTYPE html>
-<html>
-    <head>
 
-    </head>
-    <body>
-       <p> HELLO THIS IS MYSTOREBW</p> 
-    </body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers are cool</title>
+<style>
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: gold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120vh;
+        margin: 0%;
+    }
+    .card {
+        background-color: bisque;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
+        padding: 24px;
+        text-align: center;
+        max-width: 300px;
+    }
+    h1 {
+        color: cadetblue;
+
+    }
+
+    p {
+        color: beige;
+        margin-bottom: 20px;
+
+    }
+    .cta-button {
+        background-color:black;
+        color: aqua;
+        padding: 20px 40px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background 0.25s;
+    }
+
+    .cta-button:hover {
+        background-color: cadetblue;
+    }
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+    }
+</style>
+</head>
+
+<body>
+    <div class="card">
+        <img src=" https://images.app.goo.gl/HnYuqPs8htyssViZ9" alt="Sneakers are cool">
+        <h1>
+            SALE!!! WEEK!!!
+        </h1>
+        <P>
+            Sneakers are on sale from February 2 to March 4
+        </P>
+        <P>
+            Limited stock available,please do hurry!!!
+        </P>
+    
+        <button class=" cta-button" onclick="handleButtonClick()">Add To Your Cart</button>
+    </div>
+    <script>
+        function handleButtonClick() {
+            alert ('WEAR US OR WEAR OFF') ;
+            // you may customize this function to perform any desired action when the button is clicked.
+        }
+
+    </script>
+    
+</body>
 </html>
-Just coded
