@@ -6,14 +6,14 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lobster', sans-serif;
 }
 
 :root{
-    --bg-color:  #17252A;
-    --second-bg-color: #2B7A78;
+    --bg-color:  #17222a;
+    --second-bg-color: #226491;
     --text-color: white;
-    --main-color: #3AAFA9 ;
+    --main-color: #3a76af ;
 }
 
 html{
@@ -27,6 +27,8 @@ body{
 }
 .header{
     position:fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 3rem 9%;
     background: rgba(0,0,0,0.41);
@@ -38,7 +40,7 @@ body{
     z-index: 100;
 }
 .logo{
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--text-color);
     font-weight: 600;
     cursor: pointer;
@@ -48,7 +50,7 @@ body{
     transform: scale(1.1);
 }
 .navbar a{
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: white;
     margin-left: 4rem;
     font-weight: 500;
@@ -70,7 +72,7 @@ section{
     gap: 5rem;
 }
 .home-content h3{
-    font-size: 3.2rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 span{
@@ -79,10 +81,10 @@ span{
 }
 .home-content h3:nth-of-type(2){
     margin-bottom: 2rem;
-    font-size: 4rem;
+    font-size: 6rem;
 }
 .home-content h1{
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -118,17 +120,17 @@ span{
                             0 0 50px var(--main-color);
 }
 .btn{
-display: inline-block;
-padding: 1rem 2.8rem;
-background: var(--main-color);
-border-radius: 4rem;
-box-shadow: 0 0 1rem var(--main-color);
-font-size: 1.6rem;
-color: var(--second-bg-color);
-letter-spacing: 0.1rem;
-font-weight: 600;
-transition: 0.3s ease;
-cursor: pointer;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 .btn:hover{
     box-shadow: none;
@@ -146,7 +148,7 @@ cursor: pointer;
     border-radius: 50%;
     border: 2px solid var(--main-color);
     box-shadow: inset 0 0 25px var(--main-color),
-                                            0 0 25px var(--main-color);
+                      0 0 25px var(--main-color);
 }
 .about-img img{
     position: relative;
@@ -237,7 +239,7 @@ background-color: var(--main-color);
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
-    height: 20rem;
+    height: 40rem;
     overflow: hidden;
 }
 .portfolio-box img{
@@ -272,23 +274,9 @@ background-color: var(--main-color);
     margin-bottom: 1.5rem;
 }
 .portfolio-info p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0.1rem 0.1rem;
 }
-/*.portfolio-info a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
-}
-If you want to add an icon to the project list
-.portfolio-info a i{
-    font-size: 3rem;
-    color: var(--second-bg-color);
-}*/
 ::placeholder {
     color: var(--text-color);
     opacity: 1; 
