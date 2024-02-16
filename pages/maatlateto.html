@@ -1,77 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Women in STEM Card</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #dcdcdc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Ensure the Font Awesome library is loaded -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-ezvqIcZuFtoVc9IOH9w8BYS6sLJ1UvXPIqK1l5VcVGDqC0FPXQQZP5iVoFQyC3s" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/564x/e9/a9/93/e9a99316f70dadbbba486cf36d74aacc.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            margin: 0;
+            font-size: 14px;
+            background-color: transparent !important; /* Override any previous background color */
+            font-family: 'Roboto', sans-serif; /* Specify the desired font family */
+        }
 
-    .card {
-      background-color: #fcfcfc;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      text-align: center;
-      max-width: 400px;
-    }
+        header {
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            background-color: transparent !important; /* Override any previous background color */
+        }
 
-    h1 {
-      color: #4d4d4d;
-    }
+        .navbar-toggler {
+            color: #fff;
+        }
 
-    p {
-      color: #666;
-      margin-bottom: 15px;
-    }
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
 
-    .cta-button {
-      background-color: #6fa76f;
-      color: white;
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
+        .search-nav {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
 
-    .cta-button:hover {
-      background-color: #5d8a5d;
-    }
+        .search-nav .input-group {
+            width: 200px;
+        }
 
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-  </style>
+        .search-nav input {
+            border-radius: 0;
+        }
+        .home-images img:nth-child(1) {
+    width: 200px; /* Adjust the width of the first image */
+}
+
+.home-images img:nth-child(2) {
+    width: 200px; /* Adjust the width of the second image */
+}
+
+.home-images img:nth-child(3) {
+    width: 200px; /* Adjust the width of the third image */
+}
+
+        /* Hide sections other than home page initially */
+        #about,
+        #contact,
+        footer {
+            display: none;
+        }
+
+        /* Music icon styles */
+        .music-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .music-icons i {
+            font-size: 3rem;
+            margin: 0 20px;
+            color: #fff;
+            opacity: 0.7; /* Adjust opacity as needed */
+            transition: opacity 0.3s ease; /* Smooth transition on hover */
+        }
+
+        /* Hover effect */
+        .music-icons i:hover {
+            opacity: 1;
+        }
+        /* Adjust footer styles */
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa; /* Set a background color for better visibility */
+            color: #333; /* Set text color for better visibility */
+            padding: 20px 0;
+            margin-top: auto; /* Ensure the footer sticks to the bottom */
+        }
+
+        .footer-links a {
+            color: #333; /* Adjust link color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+    </style>
+    <title>Combined HTML File</title>
 </head>
+
 <body>
-
-<div class="card">
-  <img src="https://media.istockphoto.com/id/1466886051/photo/businessman-hand-holding-glowing-digital-ai-and-brain-icon-artificial-intelligence-technology.jpg?s=1024x1024&w=is&k=20&c=OXHUlZTNxjEFxxBeGfvfjA1OpkjGRoAqOAO1s8UiRuI=" alt="Women in STEM Image">
-  <h1>Empowering Women in STEM</h1>
-  <p>Dear Trailblazer,<br>As we champion the cause of women in STEM, we celebrate the incredible contributions and achievements that women make in the fields of Science, Technology, Engineering, and Mathematics.</p>
-  <p>This journey is about breaking barriers, shattering stereotypes, and paving the way for future generations. Wishing you the courage to explore, the vision to innovate, and the resilience to thrive in these crucial areas of knowledge.</p>
-  <p>Together, let's empower women to lead and shape the future in STEM!</p>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarExample01"
+                    aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-code"></i> Felo Le Tee Card &#9660;
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home" onclick="showContent('home')">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" onclick="showContent('about')">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" onclick="showContent('contact')">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="input-group rounded">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="container">
+            <p>Welcome to the artistic world of Felo Le Tee. Explore the beauty and creativity of Felo's unique artworks.</p>
+              <!-- Add images here -->
+            <div class="home-images">
+                <img src="https://cdn.pixabay.com/photo/2017/09/13/22/23/same-2747284_1280.png" alt="Image 1">
+                <img src="https://cdn.pixabay.com/photo/2020/09/10/06/22/piano-5559463_1280.png" alt="Image 2">
+                <img src="https://cdn.pixabay.com/photo/2023/07/22/17/37/music-8143866_1280.png" alt="Image 2">
+            </div>
+        </section>
+        <section id="about" class="container">
+            <h2>About</h2>
+            <p>Felo Le Tee is an accomplished visual artist with a passion for expressing emotions through art. His unique style and creative vision have earned him recognition and admiration from art enthusiasts around the world.</p>
+            <p>Driven by a deep appreciation for the beauty of nature and the complexity of human emotions, Felo's artworks capture the essence of life in vibrant colors and captivating compositions.</p>
+            <p>Whether it's a serene landscape, a dynamic abstract piece, or a poignant portrait, Felo's art invites viewers to explore their own emotions and perceptions, forging a deep connection between the artist and the audience.</p>
+        
+            <!-- Add images here -->
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://th.bing.com/th/id/OIP.HVuIcWvssN77MN0kXWifbQAAAA?rs=1&pid=ImgDetMainvvv" class="img-fluid" alt="Image 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://th.bing.com/th/id/OIP.bsVOWpqUgM_ULvwdrJsD-gAAAA?rs=1&pid=ImgDetMain" class="img-fluid" alt="Image 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://th.bing.com/th/id/R.948a3055aa55cd917189ea18da0e6332?rik=NXEf3mXKwMEX3A&pid=ImgRaw&r=0" class="img-fluid" alt="Image 3">
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <div style="max-width: 600px;"> <!-- Adjust the max-width as needed -->
+                <p>If you have any questions about Felo Le Tee's artworks or would like to inquire about purchasing a piece, please feel free to contact us using the form below:</p>
+                <form> 
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"
+                        placeholder="Enter your message here"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </main>
+     <!-- Footer -->
+<footer class="bg-light text-center ">
+    <!-- Grid container -->
+    <div class="container p-4">
   
-  <button class="cta-button" onclick="handleButtonClick()">Inspire the Future</button>
-</div>
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+  
+        <!-- Google -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+  
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+  
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          distinctio earum repellat quaerat voluptatibus placeat nam,
+          commodi optio pariatur est quia magnam eum harum corrupti dicta,
+          aliquam sequi voluptate quas.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+  
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">Felo le tee.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-J6VoHeR83e2A6kk3udC5+eC82lMpvXXavI7Yaxgb0FJpBZsRbc63OY5e3zfj2tqf" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-XmU01qfXBxVJpBSHJpTQpaG86IXvK4NrC0HpEz9b0Ll4cA3DI1ATLe0auea9Pc47" crossorigin="anonymous">
+    </script>
+    <script>
+        function showAlert() {
+            var alertDiv = document.getElementById('ShowAlert');
+            alertDiv.style.display = 'block';
+            setTimeout(function () {
+                alertDiv.style.display = 'none';
+            }, 3000);
+        }
 
-<script>
-  function handleButtonClick() {
-    alert('Empower and inspire the future generation of women in STEM!');
-  }
-</script>
+        function showContent(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show the clicked section
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            new mdb.Collapse(document.querySelector('[data-mdb-collapse-init]'));
+        });
+    </script>
 
 </body>
+
 </html>
+
