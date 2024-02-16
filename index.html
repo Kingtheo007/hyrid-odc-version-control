@@ -71,6 +71,11 @@
       /* Example background color */
 
     }
+  .btn-primary{
+    border-radius: 50px;  background-color: red; width: 80px;
+  }
+  .card-title-Gogontle{font-size: medium; font-style: italic;}
+  
   </style>
 </head>
 
@@ -555,6 +560,34 @@
         </div>
       </div>
 
+           <!-- Maatla Teto -->
+           <div class="col-md-4">
+            <!-- Card -->
+            <div class="card mb-4">
+              <!-- Card image -->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://fakazanews.com/wp-content/uploads/2022/08/Felo-Le-Tee.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!-- Card content -->
+              <div class="card-body text-center">
+                <!-- Title -->
+                <h4 class="card-title">Maatla Teto</h4>
+                <!-- Text -->
+                <p class="lead">Felo Le Tee Amapiano Artist</p>
+                <!-- Button -->
+                <button type="button" onclick="navigateTotetoPage()"
+                  class="btn btn-light-blue btn-md custom-button-tlotlo">
+                  <i class="fas fa-info-circle"></i> Read more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>v
+
            <!-- Karabo Addanes -->
            <div class="col-md-4">
             <!-- Card -->
@@ -582,6 +615,17 @@
             </div>
           </div>
         </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://i.pinimg.com/474x/6f/99/99/6f9999b1c4a8a43ffcb59c11283ca2aa.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title-Gogontle" style="font-family: 'Lobster', sans-serif;">
+                  Capturing Life: Gogontle Molefe's Online Scrapbook
+              </h5>
+              <p class="card-text">Dive Into My Life: Learn My Health Tips And Tricks</p>
+              <a href="#" class="btn-primary">Read More</a>
+          </div>
+          </div>
+          
 
 
 
@@ -758,6 +802,11 @@
     // Perform your navigation logic here
     // For example, redirect to another page
     window.location.href = "pages/Karabo_addanes.html";
+  }
+  function navigateTotetoPage() {
+    // Perform your navigation logic here
+    // For example, redirect to another page
+    window.location.href = "pages/maatlateto.html";
   }
 </script>
 
