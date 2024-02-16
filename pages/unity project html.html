@@ -261,7 +261,7 @@
       <div class="slide"><img src="ubn cap.jpg" width="500px" height="500px" alt="Slide 2"><p style="color: rgb(229, 193, 62);">UBN Multi-colored Flatcap</p></div>
       <div class="slide"><img src="ubn book.jpeg"  alt="Slide 3"><p style="color: blue;">UN Journal</p></div>
       <div class="slide"><img src="ubn laptop.jpg" width="500px" height="500px" alt="Slide 4"><p style="color: orangered;">Classic UBN Laptop + Wallpaper package</p></div>
-      <!-- Add more slides as needed -->
+      
     </div>
 
     <button id="prevBtn" onclick="prevSlide()">❮</button>
@@ -324,6 +324,71 @@
 </script>
 </form>
 <br> 
+<div class="comments">
+  <h2>Comments</h2>
+  <div id="commentList"></div>
+  <form id="commentForm">
+    <textarea id="commentInput" placeholder="Write your comment here..." required></textarea>
+    <button type="submit">Post Comment</button>
+    <style>
+      .comments {
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: left;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+#commentInput {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+    </style>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const commentForm = document.getElementById('commentForm');
+  const commentInput = document.getElementById('commentInput');
+  const commentList = document.getElementById('commentList');
+
+  commentForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const commentText = commentInput.value.trim();
+
+    if (commentText !== '') {
+      
+      const commentElement = document.createElement('div');
+      commentElement.classList.add('comment');
+      commentElement.textContent = commentText;
+
+    
+      commentList.appendChild(commentElement);
+
+      commentInput.value = '';
+    }
+  });
+});
+
+   </script>
+  </form>
+</div>
+<script src="unity.js"></script>
 <div class="rotating-container">
   <img class="rotating-image" src="ubn team.png" alt="Rotating Image">
 </div>
