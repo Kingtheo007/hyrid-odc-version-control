@@ -23,13 +23,13 @@ $phone = $conn->real_escape_string($_POST['phonenumber']);
 
 
 //Inserting data into table called users
-$sql = "INSERT INTO users (name, lastname,occupation, email, phonenumber) VALUES ('$name', '$lastname','$occupation' '$email', '$phonenumber')";
+$sql = "INSERT INTO users (name, lastname,occupation email, phonenumber) VALUES ('$name', '$lastname','$occupation' '$email', '$phonenumber')";
 
 
 //Check if SQL query was successful
 if ($conn->query($sql) === TRUE) {
     // and if it is, then we will display a message to the user
-    echo "Signed up successfully";
+    echo "New record created successfully";
 } else {
     // if it is not, then we will display an error message to the user
     echo "Error: " . $sql . "<br>" . $conn->error;
